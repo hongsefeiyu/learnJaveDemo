@@ -35,6 +35,8 @@ public class Single {
         return new BigDecimal(String.valueOf(reckoningAmt)).divide(new BigDecimal(day)).multiply(new BigDecimal(percent)).toPlainString();
     }
 
+    //这个是master的变更
+
 
 
 }
