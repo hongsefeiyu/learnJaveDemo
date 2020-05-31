@@ -37,6 +37,8 @@ public class Single {
         return new BigDecimal(String.valueOf(reckoningAmt)).divide(new BigDecimal(day)).multiply(new BigDecimal(percent)).toPlainString();
     }
 
+    //server C4
+
 
 
 
