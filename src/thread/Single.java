@@ -10,7 +10,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Single {
 
 
-    //server更改 C3
     public static void main(String[] args) {
         try {
             String str = calcReckReserveLimit(-1020601.48,0.0,0.0,"20");
@@ -22,8 +21,6 @@ public class Single {
         }
     }
 
-    //C5:master
-    //C6:master
 
     private static String calcReckReserveLimit(double stockBuyAmt, double repoAmt, double bondStockBuyAmt, String day) {
         //stockBuyAmt = -1020601.48
@@ -36,8 +33,6 @@ public class Single {
         return new BigDecimal(bondReckReserveLimit).add(new BigDecimal(otherReckReserveLimit)).toPlainString();
     }
 
-    //client C8
-    //client C9
 
     private static String getReckReserveLimit(double reckoningAmt, String day, String percent) {
         return new BigDecimal(String.valueOf(reckoningAmt)).divide(new BigDecimal(day)).multiply(new BigDecimal(percent)).toPlainString();
