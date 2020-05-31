@@ -33,6 +33,8 @@ public class Single {
         return new BigDecimal(bondReckReserveLimit).add(new BigDecimal(otherReckReserveLimit)).toPlainString();
     }
 
+    //client C8
+
     private static String getReckReserveLimit(double reckoningAmt, String day, String percent) {
         return new BigDecimal(String.valueOf(reckoningAmt)).divide(new BigDecimal(day)).multiply(new BigDecimal(percent)).toPlainString();
     }
